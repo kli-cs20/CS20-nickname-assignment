@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Nickname Assignment</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Page Title</h1>
+    <h1>Nickname Assignment</h1>
+
+    <p>Enter your first and last names below. Then press the buttons to get a random nickname or all possible nicknames.</p>
+
+    <p>First Name: <input id="first-name" type="letter"> Last Name: 
+    <input id="last-name" type="letter"></p>
+
+        <p><button id="randName">Random Nickname</button><button id="allNames">All Nicknames</button></p>
+
     <hr>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia placeat dolorum delectus amet nostrum sapiente incidunt repellat alias nihil explicabo!</p>
+
+    <div id="container">
+        <p id="results"></p>
+    </div>
 
     <script src="main.js"></script>
 </body>
