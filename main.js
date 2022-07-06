@@ -8,7 +8,7 @@ let generateAllBtn = document.getElementById("allNames")
 let resultEl = document.getElementById("results");
 
 // Basic Array
-let nicknames = ["'The Genius'", "'The Slob'", "'The Hero'", "'The Tyrant'", "'Hates Nicknames'", "'The Rock'", "'Loves Food'", "'The Flash'", "'The Coder'"];
+let nicknames = ["'The Genius'", "'The Slob'", "'The Hero'", "'The Tyrant'", "'Hates Nicknames'", "'The Rock'", "'Loves Food'", "'The Flash'", "'The Coder'", "'Bird Lover'", "'Tree Hugger'", "'The Maniac'"];
 
 // Event Listener / Generate Nickname Function
 randNameBtn.addEventListener("click", generateName);
