@@ -8,14 +8,15 @@ let generateAllBtn = document.getElementById("allNames")
 let resultEl = document.getElementById("results");
 
 // Basic Array
-let nicknames = ["'The Genius'", "'The Slob'", "'The Hero'", "'The Tyrant'", "'Hates Nicknames'", "'The Rock'", "'Loves Food'"];
+let nicknames = ["'The Genius'", "'The Slob'", "'The Hero'", "'The Tyrant'", "'Hates Nicknames'", "'The Rock'", "'Loves Food'", "'The Flash'", "'The Coder'"];
 
 // Event Listener / Generate Nickname Function
 randNameBtn.addEventListener("click", generateName);
 
 function generateName() {
-    // Update User Input for Functions
-    updateNames();
+    // Update User Input
+    let firstName = firstNameEl.value;
+    let lastName = lastNameEl.value;
     let i = Math.floor(Math.random() * nicknames.length);
 
     resultEl.innerHTML = `<p>${firstName} ${nicknames[i]} ${lastName}</p>`;
@@ -25,16 +26,12 @@ function generateName() {
 generateAllBtn.addEventListener("click", printNicknames);
 
 function printNicknames() {
-    // Update User Input for Functions
-    updateNames();
+    // Update User Input
+    let firstName = firstNameEl.value;
+    let lastName = lastNameEl.value;
     let outputStr = "";
     for (let i = 0; i < nicknames.length; i++) {
         outputStr += `<p>${firstName} ${nicknames[i]} ${lastName}</p>`;
     }
     resultEl.innerHTML = outputStr;
-}
-
-function updateNames() {
-    let firstName = firstNameEl.value;
-    let lastName = lastNameEl.value;
 }
